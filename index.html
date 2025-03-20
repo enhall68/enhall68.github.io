@@ -133,24 +133,24 @@
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
 							<p>To get in touch with me, either fill out the sections below to send a message, or use one of the links to the side. The very last one contains a download link for my resume.&nbsp; &nbsp;&nbsp;</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
+							<form method="POST" action="https://formspree.io/f/xrbppzbe">
+    								<div class="fields">
+        							<div class="field">
+            								<label for="name">Name</label>
+            								<input type="text" name="name" id="name" required />
+       								 </div>
+       								 <div class="field">
+        								 <label for="email">Email</label>
+         								 <input type="email" name="email" id="email" required />
+        							 </div>
+       								 <div class="field">
+            								 <label for="message">Message</label>
+           								 <textarea name="message" id="message" rows="4" required></textarea>
+       								 </div>
+   								 </div>
+    								 <ul class="actions">
+    									 <li><input type="submit" value="Send Message" /></li>
+   								 </ul>
 							</form>
 							<ul class="contact">
 								
