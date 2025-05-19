@@ -2416,14 +2416,11 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
-		max-width: 300px;
-		width: 100%;
 	}
 
 		.image img {
-			clip-path: circle(50%);
-			width: 100%;
-			height: auto;
+			border-radius: 5px;
+			display: block;
 		}
 
 		.image.left, .image.right {
@@ -4157,3 +4154,44 @@ input, select, textarea {
 		}
 
 	}
+
+/* Custom banner logo styling */
+.logo-tagline-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;  /* ✅ Aligns image and text vertically centered */
+  gap: 2em;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 1em;
+}
+
+.banner-logo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.logo-wrapper {
+  flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.tagline-content {
+  max-width: 700px;
+  text-align: left;
+}
+
+/* Optional: Stack on smaller screens */
+@media screen and (max-width: 768px) {
+  .logo-tagline-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tagline-content {
+    max-width: 100%;
+  }
+}
