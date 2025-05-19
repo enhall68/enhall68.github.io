@@ -4169,7 +4169,7 @@ input, select, textarea {
 .banner-logo {
   width: 400px;
   height: 600px;
-  border-radius: 0%;
+  border-radius: 6%;
   object-fit: cover;
   display: block;
 }
