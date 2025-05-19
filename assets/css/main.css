@@ -4174,6 +4174,15 @@ input, select, textarea {
   display: block;
 }
 
+@media screen and (max-width: 768px) {
+  .banner-logo {
+    width: 100px;
+	height: 300px;
+	border-radius: 6%;
+	object-fit: cover;
+	display: flex;
+  }
+
 .logo-wrapper {
   flex-shrink: 0; 
 }
@@ -4199,5 +4208,5 @@ input, select, textarea {
 .description {
 	max-width: 1920px;
 	text-align: left;
-	margin: 0 2.7em -4.5em 2.7em;
+	margin: 2em 3em 0em 5.5em;
 }
