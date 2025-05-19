@@ -4159,7 +4159,7 @@ input, select, textarea {
 .logo-tagline-container {
   display: flex;
   flex-direction: row;
-  align-items: center;  /* ✅ Aligns image and text vertically centered */
+  align-items: center;  
   gap: 2em;
   justify-content: center;
   flex-wrap: nowrap;
@@ -4175,11 +4175,11 @@ input, select, textarea {
 }
 
 .logo-wrapper {
-  flex-shrink: 0; /* Prevent image from shrinking */
+  flex-shrink: 0; 
 }
 
 .tagline-content {
-  max-width: 700px;
+  max-width: 1920px;
   text-align: left;
 }
 
