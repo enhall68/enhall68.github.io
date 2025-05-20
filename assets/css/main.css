@@ -4191,6 +4191,7 @@ input, select, textarea {
   max-width: 1920px;
   text-align: left;
 }
+}
 
 /* Optional: Stack on smaller screens */
 @media screen and (max-width: 768px) {
@@ -4199,10 +4200,10 @@ input, select, textarea {
     align-items: center;
     text-align: center;
   }
+}
   .tagline-content {
     max-width: 100%;
   }
-}
 
 .description {
 	max-width: 1920px;
