@@ -53,28 +53,157 @@
 							<div class="wrapper">
 								<div class="inner">
 
-									<h3 class="major">Lorem ipsum dolor</h3>
-									<p>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
+									<h3 class="major">Background</h3>
+									<p>Currently there are estimated to be 308,000 individuals in the United States suffering from spinal cord injuries (SCI) with 18,000 new cases each year [1]. There are two primary sources of spinal cord injuries, those caused by diseases, typically congenital defects, and those caused by traumatic injuries like motor vehicle crashes and violent crime. SCIs cause life-lasting impairments such as poor mobility, incontinence, and loss of independence. Patients with spinal cord injuries often need lifetime treatment that can be difficult to find coverage for and impose a significant economic burden on individuals and healthcare workers responsible for care. While current treatment solutions are unable to cure full paralysis, many of the problems associated with SCI such as incontinence and muscle weakness can be relieved through rehabilitation or implanted spinal cord stimulators (SCS). These systems work by helping to strengthen and reconnect neural pathways, but these options are often costly or may be inaccessible due to insurance limitations. Moreover, conventional SCS devices require surgery, and transcutaneous SCS (tSCS) devices can cause uneven current distribution, leading to discomfort or painful stimulation. With a necessity to improve current distribution and electrode adhesive efficiency, new materials are being developed.</p>
 
-									<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.</p>
-
-									<h3 class="major">Vitae phasellus</h3>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-									</section>
+									<h3 class="major">Problem and Need</h3>
+										<h4>Problem</h4>
+											<blockquote>SCI patients have few options of treatments for spinal cord injuries that can aid in the recovery of basic needs like incontinence or temperature regulation. Existing solutions are expensive, invasive, and require significant medical assistance.</blockquote>
+										<h4>Need Statement</h4>
+											<blockquote>A way to uniformly administer electrical current to the skin for tSCS in patients with SCI to improve homeostasis, motor control, and sensory function.</blockquote>
+										<h4>Our Solution</h4>
+											<blockquote>Low-cost liquid metal gallium-based hydrogel electrode with a custom-built stimulation device to improve transcutaneous current directed into the spine and provide patients with a more convenient means of at-home and in-clinic therapy.</blockquote>
+									
+									<h3 class="major">Design Constraints</h3>									<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Need Specification</th>
+														<th>Design Constraint</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Adjustable</td>
+														<td>User can change intensity and frequency.</td>
+													</tr>
+													<tr>
+														<td>Comfortable</td>
+														<td>Must minimize heat generation and mitigate shocks.</td>
+													</tr>
+													<tr>
+														<td>Safe</td>
+														<td>Complies with IEC, ISO, and FDA standards.</td>
+													</tr>
+													<tr>
+														<td>Non-invasive</td>
+														<td>No surgery or skin penetration required.</td>
+													</tr>
+													<tr>
+														<td>Stimulating</td>
+														<td>Sufficient current supplied to the spinal cord (max 225 mA).</td>
+													</tr>
+													<tr>
+														<td>Inexpensive</td>
+														<td>Under $500.</td>
+													</tr>
+													<tr>
+														<td>Adhesive</td>
+														<td>Can't fall off but easy to remove (10 kPa).</td>
+													</tr>
+													<tr>
+														<td>Portable</td>
+														<td>User can move while using the device.</td>
+													</tr>
+													<tr>
+														<td>Stretchable</td>
+														<td>Electrodes must be stretchable to fit the neck well.</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									
+									<h3 class="major">Engineering Design</h3>
+									<div class="col-12"><span class="image fit"><img src="images/design.png" alt="" /></span></div>
+										<h4>Figure 1.</h4>
+											<blockquote>A) Potential configurations of electrodes on patients. This decision will depend upon the specific needs of the patient and physician's expertise. B) Overview of the proposed device. Electrodes are attached to the back of the patient's neck and hardwired to the control device. The figure is not to scale, and the control device is significantly enlarged.</blockquote>
+									<div class="col-12"><span class="image fit"><img src="images/process.png" alt="" /></span></div>
+										<h4>Figure 2.</h4>
+											<blockquote>Steps to produce PVA/gallium hydrogel for tSCS. A 15% PVA hydrogel solution is first produced, followed by sonication of gallium in the hydrogel matrix. This mix is poured into a 3D printed mold to shape the hydrogel electrodes. The mix then undergoes three freeze-thaw cycles to strengthen the hydrogel while maintaining strong adhesiveness.</blockquote>
+									
+									<h3 class="major">Final Device</h3>
+									<div class="col-12"><span class="image fit"><img src="images/device2.png" alt="" /></span></div>
+										<h4>Figure 3.</h4>
+										<blockquote>3D rendering of the controller for the tSCS device. Users are able to change the frequency, intensity, and waveform of the stimulation to tailor the stimulation to their comfort and therapeutic goals.</blockquote>
+									<div class="col-12"><span class="image fit"><img src="images/use.png" alt="" /></span></div>
+										<h4> Figure 4.</h4>
+											<blockquote>Placement of the liquid metal hydrogels on the spinal column for tSCS. The PVA hydrogel matrix adheres to the back of the neck, and wires are inserted into the hydrogel. The gallium provides conductivity for stimulation.</blockquote>
+									
+									<h3 class="major">Cost Breakdown</h3>
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Item</th>
+														<th>Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>PVA*</th>
+														<th>$2.40</th>
+													</tr>
+													<tr>
+														<th>Gallium*</th>
+														<th>$0.75</th>
+													</tr>
+													<tr>
+														<th>PLA</th>
+														<th>$16.00</th>
+													</tr>
+													<tr>
+														<th>OLED Screen</th>
+														<th>$3.50</th>
+													</tr>
+													<tr>
+														<th>Control Buttons (x4)</th>
+														<th>$1.20</th>
+													</tr>
+													<tr>
+														<th>H-bridge</th>
+														<th>$13.00</th>
+													</tr>
+													<tr>
+														<th>Transformer</th>
+														<th>$26.00</th>
+													</tr>
+													<tr>
+														<th>Miscellaneous Electronics</th>
+														<th>$20.00</th>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="1"></td>
+														<td>$82.85</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+										<h4>*Price per gram. 15g PVA used -- $16 for 100g. 1.25g of gallium used -- $50 for 100g.</h4>
+									
+									<br>
+									
+									<h3 class="major">Verification and Validation</h3>
+									<p>Verification testing of the hydrogel confirmed that it met the “stretchable” constraint at over 100% elongation. The hydrogel is adhesive and has no heat generation. The current distribution was evenly distributed through the hydrogel, with voltage measurements ranging from 8.29-8.37 V when connected to a 8.5 V source. The hydrogel is biocompatible and meets IEC, ISO, and FDA standards. Additionally, the device delivered 120 V and 150 mA of biphasic power for stimulation.  Current studies show that up to 150 mA of biphasic current generate action potentials for neurorehabilitation with tSCS [2]; however, future testing will involve measuring action potentials invoked by our device in the spinal cord through electrodes.</p>
+									
+									<div class="col-12"><span class="image fit"><img src="images/vandv.png" alt="" /></span></div>
+										<h4>Figure 5.</h4>
+											<blockquote>(Top) Elongation testing of the hydrogel. (Bottom) Measured voltage of device with biphasic voltage around 120V.</blockquote>
+									
+									<h3 class="major">Acknowledgements</h3>
+									<p>We would like to thank Dr. Alan Eberhardt for his mentorship and support over the past year. We would also like to express our gratitude to our client, Dr. Jamie Tyler, for providing us with this project. Thank you for your support, insightful input, and for supplying the equipment necessary for the successful development of our device.</p>
+									
+									<h3 class="major">References</h3>
+										<ol>
+											<li>“How Many People Are Affected by SCI? | NICHD - Eunice Kennedy Shriver National
+Institute of Child Health and Human Development,” January 3, 2025.
+https://www.nichd.nih.gov/health/topics/spinalinjury/conditioninfo/risk.</li>
+											<li>Dorrian, Ryan M., Carolyn F. Berryman, Antonio Lauto, and Anna V. Leonard. “Electrical
+Stimulation for the Treatment of Spinal Cord Injuries: A Review of the Cellular and
+Molecular Mechanisms That Drive Functional Improvements.” Frontiers in Cellular
+Neuroscience 17 (February 3, 2023). https://doi.org/10.3389/fncel.2023.1095259.</li>
+										</ol>
 
 								</div>
 							</div>
@@ -85,7 +214,7 @@
 					<section id="footer">
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+							<p>To get in touch with me, either fill out the sections below to send a message, or use one of the links to the side. The very last one contains a download link for my resume.&nbsp; &nbsp;&nbsp;</p>
 							<form method="post" action="#">
 								<div class="fields">
 									<div class="field">
@@ -106,20 +235,20 @@
 								</ul>
 							</form>
 							<ul class="contact">
-								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
-								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+								
+								<li class="icon solid fa-phone">(256) 801-5307</li>
+							  <li class="icon solid fa-graduation-cap"><a href="enhall@uab.edu">enhall@uab.edu</a></li>
+								<li class="icon solid fa-envelope"><a href="enhall068@gmail.com">enhall068@gmail.com</a></li>
+								
+								<li class="icon brands fa-github"><a href="https://github.com/enhall68 ">https://github.com/enhall68&nbsp;</a></li>
+								
+								<li class="icon brands fa-linkedin"><a href="www.linkedin.com/in/enhalluab">www.linkedin.com/in/enhalluab</a></li>
+<li class="icon fa-file-word"><a href="images/Hall Erica N_Resume_012025.docx">Resume Download</a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
+							  <li>&copy; Erica Nicole Hall. All rights reserved.</li>
+							  <li>Design adapted from : <a href="http://html5up.net">HTML5 UP</a></li>
+						  </ul>
 						</div>
 					</section>
 
